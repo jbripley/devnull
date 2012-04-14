@@ -25,4 +25,4 @@ function caller(cb)
 	}
 }
 
-print caller(function() { console.log("done"); })
+caller(function() { console.log("done"); })

@@ -1,8 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf8 -*- 
 
-import urllib2
-
 startMatchRowStart = 100101
 startMatchRow = 100101
 with open('2_8.data.txt', 'r') as f:
