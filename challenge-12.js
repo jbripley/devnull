@@ -7,18 +7,7 @@ var unsortedList = [
 ];
 
 function sortfunction(first, second){
-	if (first.foo < second.foo)
-	{
-		return 1;
-	}
-	else if(first.foo === second.foo)
-	{
-		return 0;
-	}
-	else
-	{
-		return -1;
-	}
+	return (second.foo - first.foo);
 }
 
 
