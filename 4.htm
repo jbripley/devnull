@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="4.js" type="text/javascript">
+</script>
+</head>
+<body>
+	<div id="node"></div>
+	<script type="text/javascript">
+	formData1 =
+	[
+		{"name": "Name", "type": "text" },
+		{"name": "Fave books", "type": "list", "list":
+			[
+				{"name": "Best book", "type": "text" },
+				{"name": "Next best book", "type": "text" }
+			]
+		},
+		{"name": "Awake", "type": "radio", "values": ["yes", "no"] }
+	];
+	formData2 =
+	[
+		{"name": "Date", "type": "date" },
+		{"name": "Emergencies", "type": "list", "list":
+			[
+				{"name": "Out of games", "type": "radio", "values": ["yes", "no"] },
+				{"name": "Out of beer", "type": "radio", "values": ["wait", "what"] }	
+			]
+		}
+	];
+	parseObjectToForm(formData1, document.getElementById('node'));
+	parseObjectToForm(formData2, document.getElementById('node'));
+	</script>
+</body>
+</html>
