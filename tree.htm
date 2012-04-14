@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="tree.js" type="text/javascript"></script>
+</head>
+<body>
+	<pre id="node"></pre>
+	<script type="text/javascript">
+	var tree = {
+		"table1":
+			[
+				{"id": 1, "label": "container1", "parent": null},
+				{"id": 2, "label": "container2", "parent": 1},
+				{"id": 3, "label": "container3", "parent": 1},
+				{"id": 4, "label": "container4", "parent": 2}
+			],
+		"table2":
+			[
+				{"id": 5, "label": "leaf1", "parent": 1},
+				{"id": 6, "label": "leaf2", "parent": 4},
+				{"id": 7, "label": "leaf3", "parent": 4},
+				{"id": 8, "label": "leaf4", "parent": 3}
+			]
+	}
+	var tree = parseTable(tree);
+	document.getElementById('node').innerHTML = tree;
+	</script>
+</body>
+</html>
