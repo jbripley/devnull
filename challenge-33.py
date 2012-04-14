@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: utf8 -*- 
+# -*- coding: utf8 -*-
 
 startMatchRowStart = 100101
 startMatchRow = 100101
